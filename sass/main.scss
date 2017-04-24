@@ -1,2 +1,50 @@
 @import "compass";
 
+$base-unit: 10px;
+
+* { border: 1px solid white;
+box-sizing: border-box; }
+
+body {
+  background-color: slategrey;
+}
+
+.floor-tile {
+  height: $base-unit;
+  width: $base-unit;
+  box-sizing: border-box;
+  display: inline-flex;
+  background-color: floralwhite;
+}
+
+.wall-tile {
+  height: $base-unit;
+  width: $base-unit;
+  background-color: gray;
+}
+
+.dungeon-room {
+  padding: 0;
+  position: relative;
+  display: inline-block;
+  flex-flow: row nowrap;
+  box-sizing: border-box;
+  flex: 1 1 auto;
+  border: none;
+  margin: 100px 5px;
+}
+
+.room-row {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex: 1 1 auto;
+  box-sizing: border-box;
+  border: none;
+  align-items: flex-start;
+  flex-flow: row nowrap;
+}
+
+.dungeon-crawler {
+  display: inline-block;
+}

@@ -1,8 +1,8 @@
-#Development Diary
+# Development Diary
 
 This is a place to take all my notes as I work through the development process on my roguelike dungeon crawler.
 
-###April 24, 2017
+### April 24, 2017
 ---
 Today, I started building the roguelike dungeon crawler for the FCC Speedrun challenge. I started the project in WebStorm using the create-react-app template. This is my second React project in WebStorm.
 

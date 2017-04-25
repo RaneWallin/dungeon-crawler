@@ -10,22 +10,22 @@ class Dungeon extends Component {
         const theGrid = [];
 
         for(let i = 0; i < height; i++) {
-            theGrid.push(<div key={i} className="room-row">{ this.getRow(width) }</div>);
+            theGrid.push(<div key={i} className="room-row">{ this.getRow(width, (i===0 || i===height-1)?true:null) }</div>);
         }
         return theGrid;
     }
 
-    getRow(width) {
+    getRow(width, border) {
         let theTiles = [];
         for(let i = 0; i < width; i++) {
-            theTiles.push(<Node key={i} />);
+            theTiles.push(<Node key={i} data-border={(border || i===0 || i===width-1)} />);
         }
 
         return theTiles;
     }
 
     getDimension() {
-        return Math.floor(Math.random() * 75 ) + 25;
+        return Math.floor(Math.random() * 50 ) + 25;
     }
     render() {
         return (

@@ -1,6 +1,6 @@
 @import "compass";
 
-$base-unit: 10px;
+$base-unit: 20px;
 
 * { border: 1px solid white;
 box-sizing: border-box; }
@@ -20,6 +20,8 @@ body {
 .wall-tile {
   height: $base-unit;
   width: $base-unit;
+  box-sizing: border-box;
+  display: inline-flex;
   background-color: gray;
 }
 

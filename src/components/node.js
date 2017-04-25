@@ -5,7 +5,9 @@ class Node extends Component {
 
     render() {
         return (
-            <div className="floor-tile" />
+            <div { ...this.props["data-border"] }
+                 className={ this.props["data-border"]?
+                              "wall-tile":"floor-tile"} />
         );
     }
 }

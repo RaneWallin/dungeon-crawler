@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
-class Floor extends Component {
+class Node extends Component {
 
     render() {
         return (
@@ -10,7 +10,7 @@ class Floor extends Component {
     }
 }
 
-Floor.propTypes = {};
-Floor.defaultProps = {};
+Node.propTypes = {};
+Node.defaultProps = {};
 
-export default Floor;
+export default Node;

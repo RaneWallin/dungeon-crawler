@@ -3,14 +3,14 @@
 This is a place to take all my notes as I work through the development process on my roguelike dungeon crawler.
 
 ### April 24, 2017
----
+###### Getting started on new project
 Today, I started building the roguelike dungeon crawler for the FCC Speedrun challenge. I started the project in WebStorm using the create-react-app template. This is my second React project in WebStorm.
 
 For my first React project in WebStorm I was deploying to a docs/ folder on my GitHub master branch. This worked okay, but create-react-app is really optimized for deployment to a gh-pages branch. On that first project, I kept having to go in after each build and fix file paths. 
 
 For this project, I decided to use the built-in deploy tools. It was easy to setup and works great. I would prefer to use a docs/ directory, because it seems cleaner to me to have everything on one branch, but I don't mind the way the gh-pages deploy works.
 
----
+###### Figuring out where to start
 I started out with the idea of creating room components that I would then tile together to build the dungeon. I created the room component and a floor component. 
 
 I was able to generate randomly sized rooms and get them into my dungeon container without any problem, but hooking them together is a bit more of a puzzle. I started to do some research. I found an amazing site that I think contains all the information I will need for this project: [Amit's Game Programming Information](http://www-cs-students.stanford.edu/~amitp/gameprog.html).

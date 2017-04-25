@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Floor from './floor';
+import Floor from './node';
 import PropTypes from 'prop-types';
 
 class Room extends Component {
@@ -38,7 +38,7 @@ class Room extends Component {
 
         console.log("test 2");
         for(let i = 0; i < width; i++) {
-            theRow.push(<Floor key={i} />);
+            theRow.push(<Node key={i} />);
         }
 
         return theRow;

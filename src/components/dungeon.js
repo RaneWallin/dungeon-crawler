@@ -25,7 +25,7 @@ class Dungeon extends Component {
     }
 
     getDimension() {
-        return Math.floor(Math.random() * 50 ) + 50;
+        return Math.floor(Math.random() * 75 ) + 25;
     }
     render() {
         return (

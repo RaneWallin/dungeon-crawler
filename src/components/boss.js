@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Enemy from './enemy';
-import PropTypes from 'prop-types';
+//import PropTypes from 'prop-types';
 
 class Boss extends Component {
     render() {
@@ -10,7 +10,7 @@ class Boss extends Component {
     }
 }
 
-Boss.propTypes = {};
-Boss.defaultProps = {};
+//Boss.propTypes = {};
+//Boss.defaultProps = {};
 
 export default Boss;

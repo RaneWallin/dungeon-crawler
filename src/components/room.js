@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import Floor from './node';
-import PropTypes from 'prop-types';
+//import Floor from './node';
+//import PropTypes from 'prop-types';
 
 class Room extends Component {
 

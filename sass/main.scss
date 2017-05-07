@@ -2,8 +2,8 @@
 
 $base-unit: 20px;
 
-* { border: 1px solid white;
-box-sizing: border-box; }
+//* { border: 1px solid white;
+//box-sizing: border-box; }
 
 body {
   background-color: slategrey;
@@ -13,6 +13,7 @@ body {
   height: $base-unit;
   width: $base-unit;
   box-sizing: border-box;
+  border: 1px lightgray solid;
   display: inline-flex;
   background-color: floralwhite;
 }
@@ -23,6 +24,7 @@ body {
   box-sizing: border-box;
   display: inline-flex;
   background-color: gray;
+  border: 1px whitesmoke solid;
 }
 
 .dungeon-room {
@@ -33,7 +35,7 @@ body {
   box-sizing: border-box;
   flex: 1 1 auto;
   border: none;
-  margin: 100px 5px;
+  margin: 100px 20px;
 }
 
 .room-row {
@@ -49,4 +51,5 @@ body {
 
 .dungeon-crawler {
   display: inline-block;
+  margin: 100px auto;
 }

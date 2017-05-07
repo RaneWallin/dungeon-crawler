@@ -1,36 +1,63 @@
 import React, {Component} from 'react';
 import Node from './node';
-import PropTypes from 'prop-types';
+const D_MAX_WIDTH = 50;
+const D_MIN_WIDTH = 25;
+const D_MAX_HEIGHT = 50;
+const D_MIN_HEIGHT = 25;
 
 class Dungeon extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {};
+    }
+
     renderNodes() {
-        const width = this.getDimension();
-        const height = this.getDimension();
+        const width = this.getDimension(D_MIN_WIDTH, D_MAX_WIDTH);
+        const height = this.getDimension(D_MIN_HEIGHT, D_MAX_HEIGHT);
         const theGrid = [];
 
         for(let i = 0; i < height; i++) {
-            theGrid.push(<div key={i} className="room-row">{ this.getRow(width, (i===0 || i===height-1)?true:null) }</div>);
+            theGrid.push(<div key={'row' + (i)} className="room-row">{ this.getRow(width, i, height) }</div>);
         }
+
+        //this.setState({theGrid});
+
         return theGrid;
     }
 
-    getRow(width, border) {
+    getRow(width, row, height) {
         let theTiles = [];
+
         for(let i = 0; i < width; i++) {
-            theTiles.push(<Node key={i} data-border={(border || i===0 || i===width-1)} />);
+            //theTiles.push(<Node key={i} data-border={(border || i===0 || i===width-1)} />);
+            theTiles.push(<Node key={'node' + (i + row*width)}
+                                ref={[row, i]}
+                                data-obstacle={true}
+                                data-cols={width}
+                                data-rows={height}/>);
         }
 
         return theTiles;
     }
 
-    getDimension() {
-        return Math.floor(Math.random() * 50 ) + 25;
+    calcRef(row, col, rWidth) {
+        return row + rWidth + col + 1;
     }
+
+    getDimension(start, end) {
+        return Math.floor(Math.random() * (end-start+1) ) + start;
+    }
+
+    buildMap() {
+        return;
+    }
+
     render() {
         return (
             <div className="dungeon">
-                { this.renderNodes() }
+                { this.renderNodes()}
+                { this.buildMap() }
             </div>
         );
     }

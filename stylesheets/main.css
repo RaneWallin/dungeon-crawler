@@ -1,9 +1,3 @@
-/* line 5, ../sass/main.scss */
-* {
-  border: 1px solid white;
-  box-sizing: border-box;
-}
-
 /* line 8, ../sass/main.scss */
 body {
   background-color: slategrey;
@@ -14,20 +8,22 @@ body {
   height: 20px;
   width: 20px;
   box-sizing: border-box;
+  border: 1px lightgray solid;
   display: inline-flex;
   background-color: floralwhite;
 }
 
-/* line 20, ../sass/main.scss */
+/* line 21, ../sass/main.scss */
 .wall-tile {
   height: 20px;
   width: 20px;
   box-sizing: border-box;
   display: inline-flex;
   background-color: gray;
+  border: 1px whitesmoke solid;
 }
 
-/* line 28, ../sass/main.scss */
+/* line 30, ../sass/main.scss */
 .dungeon-room {
   padding: 0;
   position: relative;
@@ -36,10 +32,10 @@ body {
   box-sizing: border-box;
   flex: 1 1 auto;
   border: none;
-  margin: 100px 5px;
+  margin: 100px 20px;
 }
 
-/* line 39, ../sass/main.scss */
+/* line 41, ../sass/main.scss */
 .room-row {
   margin: 0;
   padding: 0;
@@ -51,7 +47,8 @@ body {
   flex-flow: row nowrap;
 }
 
-/* line 50, ../sass/main.scss */
+/* line 52, ../sass/main.scss */
 .dungeon-crawler {
   display: inline-block;
+  margin: 100px auto;
 }

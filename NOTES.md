@@ -21,4 +21,15 @@ For my new approach, that I haven't started on yet. I will create a randomly siz
 
 I haven't even begun to implement this yet, so my approach may change, but this feels like a really good start. 
  
+### May 7, 2017
+##### Building a Dungeon Map
+I've been knee deep in work and finals, so it's been a few weeks since I worked on this project. Today, I finally got back into it. I spent some time thinking about the algorithm for drawing my dungeon map. I think this is going to be the most challenging part of this project.
+
+During my last code sprint, I came up with the idea of creating a grid of nodes. Nodes can either be open, meaning a user can move through them, or obstacles, meaning the player can't move through them. My initial plan was to start with a fully open grid and then draw in walls. Upon furhter reflect, I've decided this is not the best approach.
+
+My new approach is to start with all the rooms closed. I'll then carve out a room, pick random exits, and then carve out new rooms off of those exits until I run out of room. I think this is a more intuitive approach.
+
+At first, I planned to start at a random node, but eventually decided this would be too much work. I am simplifying things by starting at the center and working out from there. 
+
+Now that I have a plan, I just need to implement it...
  

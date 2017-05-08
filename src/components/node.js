@@ -3,10 +3,24 @@ import React, {Component} from 'react';
 
 class Node extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            obstacle: true
+        };
+    }
+
+    // makeObstacle() {
+    //     this.setState({ obstacle: true });
+    // }
+
+    makeOpen() {
+        this.setState({ obstacle: false });
+    }
+
     render() {
         return (
-            <div { ...this.props["data-obstacle"] }
-                 className={ this.props["data-obstacle"]?
+            <div className={ this.state.obstacle?
                               "wall-tile":"floor-tile"} />
         );
     }

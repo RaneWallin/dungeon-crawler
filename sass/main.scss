@@ -1,12 +1,12 @@
 @import "compass";
 
-$base-unit: 20px;
+$base-unit: 10px;
 
 //* { border: 1px solid white;
 //box-sizing: border-box; }
 
 body {
-  background-color: slategrey;
+  background-color: black;
 }
 
 .floor-tile {
@@ -24,7 +24,7 @@ body {
   box-sizing: border-box;
   display: inline-flex;
   background-color: gray;
-  border: 1px whitesmoke solid;
+  border: 1px black solid;
 }
 
 .dungeon-room {
